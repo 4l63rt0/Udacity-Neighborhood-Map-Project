@@ -3,19 +3,7 @@ API Course, Lesson 1 -->
 <html>
 
 <head>
-  <!-- styles put here, but you can include a CSS file and reference it instead! -->
-  <style type="text/css">
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    #map {
-      height: 100%;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 
 <body>
@@ -24,12 +12,13 @@ API Course, Lesson 1 -->
     var map;
 
     function initMap() {
+      // Constructor creates a new map (requirements: Center, Zoom)
       map = new google.maps.Map(document.getElementById('map'), {
         center: {
           lat: 28.3388369,
           lng: -99.6174334
         },
-        zoom: 14
+        zoom: 11
       });
       var smEnergy = {
         lat: 28.3388369,
@@ -43,7 +32,8 @@ API Course, Lesson 1 -->
     }
   </script>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnwbuI0b5q6p5sJAa2wcHIy2DGkZFisBY&v=3&callback=initMap">
+  <script
+    async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnwbuI0b5q6p5sJAa2wcHIy2DGkZFisBY&v=3&callback=initMap">
   </script>
 </body>
 
