@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="static/styles.css">
+  <title>Places I visited</title>
+</head>
+<body>
+
+  <section id="mainContainer">
+    <div id="trakingInfo">
+      <h1 id="appName"> Places I visited</h1>
+      <br>
+      <br>
+      <div id="countryContainer">
+        <div class="label">By Country:  </div>
+        <select id="countryDropDown" data-bind="options: availableCountries,
+                     optionsText: 'countryName',
+                     value: selectedCountry">
+        </select>
+      </div>
+      <div data-bind="visible: selectedCountry"> <!-- Appears when you select something -->
+        <p>You have chosen:
+        <span id="selectedPlace" data-bind="text: selectedCountry() ? selectedCountry().countryName : 'unknown'"></span></p>
+      </div>
+      <br>
+      <div>
+        <input class="button" type="Button" id="home" value="Show Home">
+        <br><br>
+      </div>
+      <div class="wikipedia-container">
+          <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+          <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+      </div>
+    </div>
+    <div id="map"></div>
+  </section>
+
+  <script src="static/knockout-3.2.0.js"></script>
+  <script src="static/script.js"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyBnwbuI0b5q6p5sJAa2wcHIy2DGkZFisBY&v=3&callback=initMap">
+  </script>
+  <script src="static/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+#trakingInfo {
+  flex: 2;
+  background-color: #A1A1A1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#appName {
+
+}
+
+#dateContainer {
+  display: flex;
+  width: 80%;
+}
+
+.label {
+  flex: 1;
+}
+
+#dateDropBox {
+  flex: 2;
+}
+
+#countryContainer {
+  display: flex;
+  width: 80%;
+}
+
+#countryDropBox {
+  flex: 2;
+}
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  flex: 8;
+}
+
+.button {
+  width: 100%;
+}
+
+.infowindow {
+  color: black;
+}
+
+#pano {
+  width: 200px;
+  height: 200px;
+}
+
+#toggle-drawing {
+  width: 100%;
+  position: relative;
+}
+
+.wikipedia-container {
+    float:right;
+    width: 90%;
+    padding:10px;
+    margin-right: 10px;
+    background-color: #grey;
+}
