@@ -1,5 +1,20 @@
 # Neighborhood-Map Projecy
 
-This is an Udacity Full Stack Web Development Project (Neighborhood-Map) adjust to my company needs. The project will be a map with several coordinates for our truck fleet. The project will track each of our operation specialist truck location every 3 minutes during their work hours to create a visual map of how are they target their visit locations at the field. This will give us enough information to solve some of our logistic issues.
+This is the Udacity Neighborhood Map Project. The project was intended to understand the use of API's with javascript and knockout.js
 
-This projecty will load all javascript Async
+The webpage included is a Map with all the placed I had visited between USA and Mexico
+
+## How to use it
+
+- Open main index webpage
+- Select the placed you want to see by country
+- Click on Marker for more information
+
+### Tools used in this project
+
+- html5
+- CSS3
+- Javascript
+- JQuery.js
+- Knockout.js
+- Google Maps API

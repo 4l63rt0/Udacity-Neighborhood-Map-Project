@@ -15,11 +15,14 @@
       <br>
       <br>
       <div id="countryContainer">
-        <div class="label">By Country:  </div>
-        <select id="countryDropDown" data-bind="options: availableCountries,
-                     optionsText: 'countryName',
-                     value: selectedCountry">
-        </select>
+        <div id="countryLabel" class="label">By Country:  </div>
+        <div>
+          <select id="countryDropDown" data-bind="options: availableCountries,
+                       optionsText: 'countryName',
+                       value: selectedCountry">
+          </select>
+        </div>
+
       </div>
       <div data-bind="visible: selectedCountry"> <!-- Appears when you select something -->
         <p>You have chosen:
@@ -27,8 +30,7 @@
       </div>
       <br>
       <div>
-        <input class="button" type="Button" id="home" value="Show Home">
-        <br><br>
+        <input class="button" type="Button" id="toggle-drawing" value="Draw Polygon">
       </div>
       <div class="wikipedia-container">
           <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>

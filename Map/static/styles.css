@@ -14,7 +14,7 @@ html, body {
 }
 
 #trakingInfo {
-  flex: 2;
+  flex: 1;
   background-color: #A1A1A1;
   display: flex;
   align-items: center;
@@ -41,9 +41,10 @@ html, body {
 #countryContainer {
   display: flex;
   width: 80%;
+  flex-direction: column;
 }
 
-#countryDropBox {
+#countryDropDown {
   flex: 2;
 }
 /* Always set the map height explicitly to define the size of the div
@@ -76,4 +77,5 @@ html, body {
     padding:10px;
     margin-right: 10px;
     background-color: #grey;
+    overflow:auto;
 }

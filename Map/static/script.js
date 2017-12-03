@@ -424,14 +424,14 @@ var mxLocations = [
  {title: 'Guadalajara', location: {lat: 20.676856, lng: -103.344773 }}
 ];
 var usLocations = [
-  {title: 'Laredo', location: {lat: 30.3079827, lng: -97.8934848 }},
-  {title: 'Venice Beach', location: {lat: 33.9799948, lng: -118.478614 }},
-  {title: 'Miami', location: {lat: 25.7825453, lng: -80.2994983 }},
-  {title: 'Wichita', location: {lat: 37.6647979, lng: -97.5837763 }}
+  {title: 'Laredo', location: {lat: 27.7600417, lng: -99.4369467 }},
+  {title: 'Santa Monica', location: {lat: 34.0075, lng: -118.493117 }},
+  {title: 'Miami', location: {lat: 25.767355, lng: -80.1313093 }},
+  {title: 'Wichita', location: {lat: 37.681575, lng: -97.345185 }}
 ];
 
 var home = [
-  {title: 'Laredo', location: {lat: 30.3079827, lng: -97.8934848 }}
+  {title: 'Laredo', location: {lat: 27.5880484, lng: -99.4712752 }}
 ];
 
 var allLocations = (mxLocations.concat(usLocations)).concat(home);
